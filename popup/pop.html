@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="pop.css">
+    </head>
+    <body class="body">
+        <button class="show-button">Show</button>
+        <button class="darkmode">DarkMode</button>
+<div class="main-class ">
+    <h2 class="heading">Quote Generator</h2>
+    <blockquote>Loading</blockquote>
+    <span>Loading</span>
+    <div class="button">
+        <button>New Quote</button>
+        <button>Tweeter</button>
+    </div>
+</div>
+
+    <script >
+        let body = document.querySelector('.body');
+            let darkMode = document.querySelector('.darkmode');
+        
+  darkMode.addEventListener('click' ,() => {
+       if(darkMode.innerHTML==='DarkMode'){
+        document.querySelector('.darkmode').innerHTML = 'LightMode';
+        body.classList.add('light-mode');
+        darkMode.classList.add('light');
+       }
+       else{
+        darkMode.innerHTML ='DarkMode';
+        body.classList.remove('light-mode');
+        darkMode.classList.remove('light');
+       }
+        
+  });
+    let showButton = document.querySelector('.show-button');
+    let popUp = document.querySelector('.main-class');
+    showButton.addEventListener('click', ()=>{
+        popUp.classList.add('openpop');
+    });
+    popUp.addEventListener('click', ()=>{
+        popUp.classList.remove('openpop');
+    });
+
+  </script>
+    </body>
+</html>

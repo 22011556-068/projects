@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >pasword strength
+       </title> 
+    <link  rel="stylesheet" href="passcode.css">
+</head>
+<body>
+    <div class="div">
+        <input type="password" placeholder="Enter the pasword" class="input" >
+        <p class="message"></p>
+    </div>
+</body>
+<script>
+ 
+let inputVal = document.querySelector('.input');
+var message = document.querySelector('.message');
+
+  inputVal.addEventListener('input', ()=>{
+
+    if(inputVal.value.match(/^[A-Za-z]$/) ){
+        message.innerHTML= "Password is weak";
+        inputVal.style.borderColor = "#ff5925";
+        message.style.color= "#ff5925";
+    }
+    if(inputVal.value.match(/^[a-z]*[0-9]{3}$/) ){
+        message.innerHTML= "Password is medium";
+        inputVal.style.borderColor = "yellow";
+        message.style.color= "yellow";
+    }
+    if(inputVal.value.match(/^[A-Za-z]*[0-9]{4}$/)){
+        message.innerHTML= "Password is strong";
+        inputVal.style.borderColor = "#26d730";
+        message.style.color= "#26d730";
+    }
+});
+
+
+</script>
+</html>

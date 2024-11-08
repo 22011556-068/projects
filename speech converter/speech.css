@@ -1,0 +1,46 @@
+body{
+    background-color: blueviolet;
+}
+.hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.hero h1{
+    color: rgb(1, 48, 1);
+    font-weight: bold;
+    font-size: 50px;
+}
+.hero textarea{
+    display: block;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(6, 116, 6, 0.897);
+}
+.hero select{
+    width: 300px;
+    height: 60px;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.hero button{
+    background-color: rgba(6, 116, 6, 0.897);
+    border: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hero button:active{
+    background-color: rgb(64, 231, 64);
+    transition: 0.5s;
+}

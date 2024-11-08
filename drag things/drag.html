@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="drag.css">
+    </head>
+    <body>
+
+        <div class="container">
+           <div class="left" >
+            <div draggable="true" class="list">1 List</div>
+            <div draggable="true" class="list1">2 List</div>
+            <div draggable="true" class="list2">3 List</div>
+            <div draggable="true" class="list3">4 List</div>
+           </div>
+           <div class="rigth" ></div>
+        </div>
+        <script>
+            let lists = document.querySelector('.list');
+            let listss = document.querySelector('.list1');
+            let listee = document.querySelector('.list2');
+            let liste = document.querySelector('.list3');
+             let rigthBox = document.querySelector('.rigth');
+            let leftBox = document.querySelector('.left');
+            let selected ;
+        function readyBar(){
+            
+             lists.addEventListener('dragstart' , function(e){
+             selected = e.target;
+             });
+             listss.addEventListener('dragstart' , function(e){
+             selected = e.target;
+             });
+         
+             listee.addEventListener('dragstart' , function(e){
+             selected = e.target;
+             });
+         
+             liste.addEventListener('dragstart' , function(e){
+             selected = e.target;
+             });
+         
+         
+             rigthBox.addEventListener('dragover', function(e){
+             e.preventDefault();
+             });
+             rigthBox.addEventListener('drop', function(e){
+              rigthBox.appendChild(selected);
+              selected = null;
+             });
+             leftBox.addEventListener('dragover', function(e){
+             e.preventDefault();
+             });
+             leftBox.addEventListener('drop', function(e){
+             leftBox.appendChild(selected);
+            
+             });
+        
+        }
+      readyBar();
+            
+        </script>
+    </body>
+</html>

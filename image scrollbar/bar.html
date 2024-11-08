@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>image scrollar</title>
+        <link rel="stylesheet" href="bar.css">
+    </head>
+    <body>
+        <div class="gallery-wrap">
+            <img src="back.jpg" class="back">
+            <div class="main-bar">
+            
+           <div>
+            <span><img src="download.jpg"></span>
+            <span><img src="download (1).jpg"></span>
+            <span><img src="2.jpg"></span>
+           </div>
+           <div>
+            <span class="margin"><img src="3.jpg"></span>
+            <span><img src="4.jpg"></span>
+            <span><img src="5.jpg"></span>
+           </div>
+           
+            </div>
+            <img src="next.jpg" class="next">
+
+        </div>
+      <script >
+        let scrolButton = document.querySelector('.main-bar');
+let backButton = document.querySelector('.back');
+let nextButton = document.querySelector('.next');
+scrolButton.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    console.log(scrolButton.scrollLeft += evt.deltaY);
+    scrolButton.style.scrollBehavior = 'auto';
+ });-
+ backButton.addEventListener('click' , ()=>{
+    console.log(scrolButton.scrollLeft -= 900);
+    scrolButton.style.scrollBehavior = 'smooth';
+ });
+ nextButton.addEventListener('click', ()=>{
+   scrolButton.scrollLeft += 900;
+   scrolButton.style.scrollBehavior = 'smooth';
+ });
+      </script>
+    </body>
+</html>

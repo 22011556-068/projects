@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+}
+.main-class{
+    position: absolute;
+    top: 0%;
+    left: 0;
+    transform: translate(-50%,-50%) scale(0.1) ;
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 6px;
+    background-color: rgb(255, 255, 255); 
+   transition: transform 0.4s, top 0.4s;
+   visibility: hidden;
+}
+.openpop{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1) ;
+   visibility: visible;    
+}
+.main-class h2{
+    width: 300px;
+   margin-left: 150px;
+   border: 3px solid rgba(4, 116, 4, 0.747);
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   font-weight: bold;
+   font-size: 40px;
+}
+.main-class blockquote{
+  width: 400px;
+  font: arial;
+  margin-left:  100px;
+  margin-top: 60px;
+}
+.main-class blockquote::before,  .main-class blockquote::after{
+    content: '"';
+}
+.main-class span{
+    width: auto;
+    position: absolute;
+    top: 280px;
+    right: 60px;
+}
+.button{
+    position: absolute;
+    top: 80%;
+    left: 160px;
+    display: flex;
+
+}
+.button button{
+    color: black;
+    background-color: green;
+    border: none;
+    width: 140px;
+    height: 40px;
+   margin-right: 10px;
+   border-radius: 40px;
+   cursor: pointer;
+}
+.show-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) ; 
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: 20px;
+    cursor: pointer;
+}
+.show-button:active{
+    background-color: blue;
+}
+.darkmode{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    color:black;
+    border: none;
+    cursor: pointer;
+    
+}
+.light-mode.body{
+ background-color: white;   
+}
+.light.darkmode{
+    background-color: black;
+    color: white;
+}

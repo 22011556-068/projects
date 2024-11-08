@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(2, 2, 68);
+    
+}
+.container{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 7px;
+ 
+}
+.input-group{
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.input-group label{
+    font-size: 18px;
+    font-weight: bold;
+   margin-right: 20px;
+   width: 100px;
+   margin-top: 9px;
+}
+.input-group input{
+    width: 340px;
+    height: 25px;
+    outline: 0;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+}
+.input-group span{
+    color: red;
+   position: absolute;
+   right: 37px;
+  
+}
+.inpo{
+    margin-left: 9px;
+}
+.input-group textarea{
+    width: 230px;
+    height: 120px;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    margin-top: 20px;
+}
+.meassge{
+    margin-left: -19px;
+    margin-top: -20px;
+}
+.container button{
+display: block;
+color: #fff;
+background-color: black;
+margin-top: 20px;
+margin-left: 200px;
+border: none;
+width: 100px;
+height: 30px;
+border-radius: 6px;
+cursor: pointer;
+}
+
+.fix-error{
+  margin-left: 20px;
+  color: red;
+}

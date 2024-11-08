@@ -1,0 +1,39 @@
+body{
+    background: #f7edff;
+}
+.buton{
+   width: 400px;
+   
+}
+.button button{
+    color:white;
+    border-radius: 6px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.button button:active{
+    background-color: rgb(190, 163, 167);
+}
+.toast{
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    overflow: hidden;
+    flex-direction: column;
+}
+.message{
+   width: 400px;
+   height: 80px;
+   box-shadow: 0 0 20px rgba(0, 0, 0,0.3);
+   font-weight: 500;
+   background: #fff;
+   margin: 15px 0px;
+   align-items: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Application formm</title>
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+    <body>
+        <div class="container">
+          
+            <form>
+                
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <span class="name-error" ></span>
+                    <input type="text" placeholder="Enter your Name" onkeyup="nameUpdate()" class="name-input">
+                </div>
+                <div class="input-group">
+                    <label>Phone No.</label>
+                    <input type="tel" placeholder="123 456 7890" class="phone" onkeyup="phoneUpdate()">
+                    <span class="phone-error" ></span>
+                </div>
+                <div class="input-group">
+                    <label>Email Id</label>
+                    <input type="email" placeholder="Enter your Email" class="inpo" onkeyup="mailUpdate()">
+                    <span class="mail-error" ></span>
+                </div>
+                <div class="input-group">
+                    <label class="meassge">your message</label>
+                   <textarea rows="5" placeholder="Enter your meassage" class="message" onkeyup="messageUpdate()"></textarea>
+                   <span class="message-error" ></span>
+                </div>
+                <button onclick="return runFun()">Submit</button>
+                <span class="fix-error" ></span>
+            </form>
+        </div>
+      <script src="form.js"></script>
+    </body>
+</html>
